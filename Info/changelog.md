@@ -46,3 +46,9 @@ npm i -D @babel/preset-typescript
 
 .babelrc
 .gitignore
+
+npm i -D url-loader svg-url-loader style-loader
+npm i -D @babel/plugin-transform-runtime
+npm i -D clean-webpack-plugin
+npm i serve
+            
