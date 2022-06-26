@@ -25,16 +25,16 @@ Commands:
 
 Production build includes the following optimization
 
-- cache busting
-- code obfuscation
+- cache busting :white_check_mark:
+- code obfuscation :white_check_mark:
   - js minification
-- chunk spliting ( Two possible ways )
-- Html optimization
-- Css optmization
+- chunk spliting :white_check_mark: ( Two possible ways )
+- Html optimization :white_check_mark:
+- Css optmization :white_check_mark:
   - Extract css per chunk into its own file
   - Minify it
 - Tree shaking ( dead code elemination )
-- Gzipped, [Furthur read](https://stackoverflow.com/questions/50442039/compression-webpack-plugin)
+- Gzipped, [Furthur read](https://stackoverflow.com/questions/50442039/compression-webpack-plugin) :white_check_mark:
 
 ### Loaders used for webpack to work
 
