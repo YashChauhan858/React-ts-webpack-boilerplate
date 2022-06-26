@@ -34,5 +34,16 @@ Production build includes the following optimization
   - Minify it ( run parallel )
 - Tree shaking
 
-@babel/preset-typescript:
-There are several ways to compile your TypeScript projects nowadays. You can use a vanilla call to tsc to just convert everything to .js files, or you can use a build tool like webpack and use a TypeScript loader like ts-loader or Babels @babel/preset-typescript
+### Loaders used for webpack to work
+
+**babel-loader** :
+bable-loader transpiles our js/ts code
+
+babel presets that webpack uses for successfully parsing react(jsx), js and ts code
+presets (set of plugins) used are as follows
+
+- [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)
+- @babel/preset-react:
+  Adds support for jsx, [furthur read](https://babeljs.io/docs/en/babel-preset-react)
+- @babel/preset-typescript:
+  There are several ways to compile your TypeScript projects nowadays. You can use a vanilla call to tsc to just convert everything to .js files, or you can use a build tool like webpack and use a TypeScript loader like ts-loader or Babels @babel/preset-typescript
