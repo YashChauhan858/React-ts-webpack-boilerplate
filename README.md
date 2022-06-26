@@ -3,7 +3,7 @@
 <p float="left">
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react" width="120"/>
   <img src="https://webpack.js.org/assets/icon-square-big.svg" alt="webpack" width="120">
-  <img src="https://commons.wikimedia.org/wiki/File:Typescript_logo_2020.svg" alt="typescript" width="120">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="typescript" width="120">
   <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="docker" width="150"/>
 </p>
 
