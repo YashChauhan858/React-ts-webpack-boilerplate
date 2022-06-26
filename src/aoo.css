@@ -1,0 +1,28 @@
+/* body {
+  height: 100%;
+} */
+.ad {
+  background: #ce5937;
+  background: -moz-linear-gradient(left, #ce5937 0%, #1c6ea4 50%, #c59237 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #ce5937 0%,
+    #1c6ea4 50%,
+    #c59237 100%
+  );
+  background: linear-gradient(to right, #ce5937 0%, #1c6ea4 50%, #c59237 100%);
+}
+#demo {
+  -moz-transform: none;
+  -webkit-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+#demo2 {
+  -moz-transform: translate(18px, -29px) skew(64deg, 33deg);
+  -webkit-transform: translate(18px, -29px) skew(64deg, 33deg);
+  -o-transform: translate(18px, -29px) skew(64deg, 33deg);
+  -ms-transform: translate(18px, -29px) skew(64deg, 33deg);
+  transform: translate(18px, -29px) skew(64deg, 33deg);
+}

@@ -1,3 +1,3 @@
 git add .
-git commit -m "webpack setup"
+git commit -m "production optimization"
 git push -u origin main

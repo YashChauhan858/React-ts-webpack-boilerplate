@@ -8,7 +8,7 @@ const devConfig = {
   output: {
     publicPath: `http://localhost:3000/`,
   },
-  devtool: "source-map",
+  devtool: "inline-source-map",
   devServer: {
     port: 3000,
     // host: "0.0.0.0",

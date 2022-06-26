@@ -51,4 +51,9 @@ npm i -D url-loader svg-url-loader style-loader
 npm i -D @babel/plugin-transform-runtime
 npm i -D clean-webpack-plugin
 npm i serve
-            
+npm install -D webpack-bundle-analyzer
+npm i -D --force optimize-css-assets-webpack-plugin
+npm i -D sass
+npm i -D npm-check
+npm unistall optimize-css-assets-webpack-plugin
+npm i -D css-minimizer-webpack-plugin
