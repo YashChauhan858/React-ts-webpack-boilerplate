@@ -19,9 +19,6 @@ const devConfig = {
     allowedHosts: "all",
   },
   plugins: [
-    new webpack.DefinePlugin({
-      "process.env": JSON.stringify(process.env),
-    }),
     new HtmlWebpackPlugin({
       template: "./src/public/index.html",
     }),

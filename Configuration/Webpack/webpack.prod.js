@@ -21,6 +21,7 @@ const prodConfig = {
   },
   optimization: {
     minimize: true,
+    usedExports: true,
     minimizer: [
       new TerserPlugin({
         // Use multi-process parallel running to improve the build speed
@@ -84,9 +85,6 @@ const prodConfig = {
     },
   },
   plugins: [
-    new webpack.DefinePlugin({
-      "process.env": JSON.stringify(process.env),
-    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",

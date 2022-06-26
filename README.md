@@ -10,11 +10,12 @@
 </p>
 
 - This is a boilerplate that includes react setup with webpack from scartch and integration of
-  typescript, eslint and redux with best practices, This boilerplate includes enviornment awareness with a support for both development spinup and production spin up
+  typescript, eslint and redux with best practices, This boilerplate includes enviornment awareness with a support for both development spinup and production spinup
 - This boilerplate also includes npm-check -u command for npm package check for all possible
   minor, major or patch update , for that simply run **npm run checkPackageUpdate**
 - ErrorBoundary component for tracking all the errors and sending to backend for
   maintaining a logger file (./src/ErrorLogger/ErrorLogger.tsx)
+- Environment variable setup with best practice.
 
 Commands:
 
@@ -26,13 +27,13 @@ Production build includes the following optimization
 
 - cache busting
 - code obfuscation
-  - js minification ( run parallel )
+  - js minification
 - chunk spliting ( Two possible ways )
 - Html optimization
 - Css optmization
   - Extract css per chunk into its own file
-  - Minify it ( run parallel )
-- Tree shaking
+  - Minify it
+- Tree shaking ( dead code elemination )
 
 ### Loaders used for webpack to work
 
@@ -40,7 +41,7 @@ Production build includes the following optimization
 bable-loader transpiles our js/ts code
 
 babel presets that webpack uses for successfully parsing react(jsx), js and ts code
-presets (set of plugins) used are as follows
+presets (set of plugins) used are as follows, [furthur read on presets](https://www.newline.co/fullstack-react/articles/what-are-babel-plugins-and-presets/)
 
 - [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)
 - @babel/preset-react:
@@ -50,5 +51,16 @@ presets (set of plugins) used are as follows
   In this boilerplate we are using ts-loader as we need typechecks at build time which is not done by
   @bable/preset-typescript, [furtur read](https://evanlouie.github.io/posts/typescript-babel-preset-typescript-ts-loader)
 
-**ts-loader**
+**ts-loader** :
 Used to compile Ts
+
+**css-loader**
+
+**sass-loader**
+
+**style-loader**
+
+**url-loader** & **svg-url-loader** :
+both convert jpg|png and svg into base64 respectively
+
+### Plugins used by webpack in development/production

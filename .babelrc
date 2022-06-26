@@ -1,8 +1,9 @@
 {
   "presets": [
     "@babel/preset-env",
+    // ["es2015", { "module": false }],
     ["@babel/preset-react", { "runtime": "automatic" }]
-    // if using @babel/preset-typescript then remove ts-loader 
+    // if using @babel/preset-typescript then remove ts-loader
     // "@babel/preset-typescript"
   ],
   "plugins": ["@babel/plugin-transform-runtime"]

@@ -32,7 +32,7 @@ class ErrorBoundary extends React.Component<
       },
     };
     // Make request to database to push errorInformationToLog
-    console.log(errorInformationToLog);
+    console.log({ errorInformationToLog });
   }
 
   render() {

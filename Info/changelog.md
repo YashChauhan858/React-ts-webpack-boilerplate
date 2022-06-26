@@ -59,3 +59,4 @@ npm unistall optimize-css-assets-webpack-plugin
 npm i -D css-minimizer-webpack-plugin
 ErrorBoundary (folder)
 ErrorBoundary.tsx
+npm i -D dotenv-webpack

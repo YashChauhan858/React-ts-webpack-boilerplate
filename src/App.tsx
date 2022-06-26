@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./aoo.css";
 
+import { environment, testingVariable } from "./Environment";
+
 const App = () => {
-  //  maa ke chooot
   const [x, setX] = useState<number>(0);
+  console.log({ environment, testingVariable });
   return (
     <div>
       App {x}

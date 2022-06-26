@@ -1,10 +1,16 @@
-const path = require("path");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   entry: "./src/index.tsx",
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".jsx"],
   },
+  plugins: [
+    new Dotenv({
+      path: "./env/.env",
+      systemvars: true,
+    }),
+  ],
   module: {
     rules: [
       {
