@@ -1,6 +1,6 @@
 # **React, Webpack, Ts, Eslint, Docker and Redux boilerplate**
 
-<p float="left">
+<p float="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react" width="100"/>
   <img src="https://webpack.js.org/assets/icon-square-big.svg" alt="webpack" width="100">
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="typescript" width="100">
