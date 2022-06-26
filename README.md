@@ -2,7 +2,7 @@
 
 <p float="left">
   <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="docker" width="150"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react" width="150"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react" width="110"/>
 </p>
 
 - This is a boiler plate that includes react setup with webpack from scartch and integration of
