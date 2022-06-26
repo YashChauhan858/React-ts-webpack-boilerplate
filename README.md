@@ -49,3 +49,6 @@ presets (set of plugins) used are as follows
   There are several ways to compile your TypeScript projects nowadays. You can use a vanilla call to tsc to just convert everything to .js files, or you can use a build tool like webpack and use a TypeScript loader like ts-loader or Babels @babel/preset-typescript
   In this boilerplate we are using ts-loader as we need typechecks at build time which is not done by
   @bable/preset-typescript, [furtur read](https://evanlouie.github.io/posts/typescript-babel-preset-typescript-ts-loader)
+
+**ts-loader**
+Used to compile Ts
