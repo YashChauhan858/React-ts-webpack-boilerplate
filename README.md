@@ -5,7 +5,7 @@
 - This boiler plate also includes npm-check -u command for npm package check for all possible
   minor, major or patch update , for that simply run _npm run checkPackageUpdate_
 
-With production being the most optiminal settings including
+Production build includes the following optimization
 
 - cache busting
 - code obfuscation
@@ -15,6 +15,7 @@ With production being the most optiminal settings including
 - Css optmization
   - Extract css per chunk into its own file
   - Minify it ( run parallel )
+- Tree shaking
 
 @babel/preset-typescript:
 There are several ways to compile your TypeScript projects nowadays. You can use a vanilla call to tsc to just convert everything to .js files, or you can use a build tool like webpack and use a TypeScript loader like ts-loader or Babels @babel/preset-typescript
