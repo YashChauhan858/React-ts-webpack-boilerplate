@@ -1,6 +1,6 @@
 # **React, Webpack, Ts, Eslint, Docker and Redux boilerplate**
 
-![docker image](https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png)
+<img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="drawing" width="200"/>
 
 - This is a boiler plate that includes react setup with webpack from scartch and integration of
   typescript, eslint and redux with best practices, This boilerplate includes enviornment awareness with a support for both development spinup and production spin up
