@@ -1,9 +1,17 @@
-# _react, webpack, ts, eslint and redux boilerplate_
+# **React, Webpack, Ts, Eslint, Docker and Redux boilerplate**
+
+![docker image](https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png)
 
 - This is a boiler plate that includes react setup with webpack from scartch and integration of
   typescript, eslint and redux with best practices, This boilerplate includes enviornment awareness with a support for both development spinup and production spin up
 - This boiler plate also includes npm-check -u command for npm package check for all possible
   minor, major or patch update , for that simply run _npm run checkPackageUpdate_
+
+Commands:
+
+1. npm run start ( spin up webpack server )
+2. npm run build ( builds production build and run postbuild command )
+3. npm run checkPackageUpdate ( runs npm-check -u for all possible updates in package.json )
 
 Production build includes the following optimization
 
