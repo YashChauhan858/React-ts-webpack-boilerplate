@@ -1,18 +1,12 @@
 const webpack = require("webpack");
 const { merge } = require("webpack-merge");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-// Extract css into its own file and inject it
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// Minify css
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-// Minify js that is being ejected into its own file
 const TerserPlugin = require("terser-webpack-plugin");
-// Minify Html
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
-
 const commonConfig = require("./webpack.common");
 const path = require("path");
 

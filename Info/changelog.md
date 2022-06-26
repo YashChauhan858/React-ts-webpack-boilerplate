@@ -57,3 +57,5 @@ npm i -D sass
 npm i -D npm-check
 npm unistall optimize-css-assets-webpack-plugin
 npm i -D css-minimizer-webpack-plugin
+ErrorBoundary (folder)
+ErrorBoundary.tsx

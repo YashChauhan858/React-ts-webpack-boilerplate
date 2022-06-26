@@ -9,10 +9,12 @@
   <img src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" alt="Redux" width="100"/>
 </p>
 
-- This is a boiler plate that includes react setup with webpack from scartch and integration of
+- This is a boilerplate that includes react setup with webpack from scartch and integration of
   typescript, eslint and redux with best practices, This boilerplate includes enviornment awareness with a support for both development spinup and production spin up
-- This boiler plate also includes npm-check -u command for npm package check for all possible
-  minor, major or patch update , for that simply run _npm run checkPackageUpdate_
+- This boilerplate also includes npm-check -u command for npm package check for all possible
+  minor, major or patch update , for that simply run **npm run checkPackageUpdate**
+- ErrorBoundary component for tracking all the errors and sending to backend for
+  maintaining a logger file (./src/ErrorLogger/ErrorLogger.tsx)
 
 Commands:
 
