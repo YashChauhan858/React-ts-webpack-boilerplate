@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const commonConfig = require("./webpack.common");
@@ -88,6 +89,13 @@ const prodConfig = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
+    }),
+    new CompressionPlugin({
+      filename: "[name]-[fragment].gz",
+      algorithm: "gzip",
+      test: /\.(js|css|html|svg)$/,
+      // threshold: 10240,
+      minRatio: 0.8,
     }),
     // new BundleAnalyzerPlugin(),
   ],

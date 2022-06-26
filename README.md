@@ -34,6 +34,7 @@ Production build includes the following optimization
   - Extract css per chunk into its own file
   - Minify it
 - Tree shaking ( dead code elemination )
+- Gzipped, [Furthur read](https://stackoverflow.com/questions/50442039/compression-webpack-plugin)
 
 ### Loaders used for webpack to work
 
