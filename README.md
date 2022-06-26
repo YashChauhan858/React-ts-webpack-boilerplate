@@ -4,6 +4,7 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react" width="120"/>
   <img src="https://webpack.js.org/assets/icon-square-big.svg" alt="webpack" width="120">
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="typescript" width="120">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/ESLint_logo.svg" alt="docker" width="150"/>
   <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="docker" width="150"/>
   <img src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" alt="Redux" width="150"/>
 </p>
