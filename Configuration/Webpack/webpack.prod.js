@@ -6,6 +6,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
+var WebpackObfuscator = require("webpack-obfuscator");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const commonConfig = require("./webpack.common");
@@ -36,7 +37,7 @@ const prodConfig = {
       }),
       new CssMinimizerPlugin(),
       new HtmlWebpackPlugin({
-        template: "./src/public/index.html",
+        template: "./public/index.html",
         minify: {
           collapseWhitespace: true,
           keepClosingSlash: true,
@@ -52,6 +53,7 @@ const prodConfig = {
     // case 2 : split all the code from node_modules
 
     // splitChunks: {
+    //   minSize: 20000,
     //   cacheGroups: {
     //     chunks: "all",
     //     vendor: {
@@ -79,6 +81,9 @@ const prodConfig = {
               /[\\/]node_modules[\\/](.*?)([\\/]|$)/
             )[1];
             // npm package names are URL-safe, but some servers don't like @ symbols
+            if (packageName.includes("react-dom")) {
+              return "vendom.react-dom";
+            }
             return `vendor.${packageName.replace("@", "")}`;
           },
         },
@@ -97,6 +102,12 @@ const prodConfig = {
       // threshold: 10240,
       minRatio: 0.8,
     }),
+    new WebpackObfuscator(
+      {
+        rotateStringArray: true,
+      },
+      ["vendom.react-dom.**.js"]
+    ),
     // new BundleAnalyzerPlugin(),
   ],
   module: {

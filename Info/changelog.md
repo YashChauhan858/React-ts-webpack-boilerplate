@@ -61,3 +61,4 @@ ErrorBoundary (folder)
 ErrorBoundary.tsx
 npm i -D dotenv-webpack
 npm i -D compression-webpack-plugin
+npm i -D webpack-obfuscator

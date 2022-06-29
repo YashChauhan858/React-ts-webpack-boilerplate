@@ -1,3 +1,3 @@
 git add .
-git commit -m "Gziping production build"
+git commit -m "build obfuscation"
 git push -u origin main
