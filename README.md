@@ -47,7 +47,7 @@ Development build includes the following :-
 bable-loader transpiles our js/ts code
 
 babel presets that webpack uses for successfully parsing react(jsx), js and ts code
-presets (set of plugins) used are as follows, [furthur read on presets](https://www.newline.co/fullstack-react/articles/what-are-babel-plugins-and-presets/)
+presets (set of plugins) used are as follows, [furthur read on presets](https://www.newline.co/fullstack-react/articles/what-are-babel-plugins-and-presets/) :white_check_mark:
 
 - [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)
 - @babel/preset-react:
