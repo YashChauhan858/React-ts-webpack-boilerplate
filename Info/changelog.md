@@ -62,3 +62,5 @@ ErrorBoundary.tsx
 npm i -D dotenv-webpack
 npm i -D compression-webpack-plugin
 npm i -D webpack-obfuscator
+npm install error-overlay-webpack-plugin --save-dev
+npm install --save-dev webpack-dashboard

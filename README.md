@@ -26,15 +26,17 @@ Commands:
 Production build includes the following optimization
 
 - cache busting :white_check_mark:
-- code obfuscation :white_check_mark:
-  - js minification
+- code obfuscation [Plugin](https://www.npmjs.com/package/webpack-obfuscator) :white_check_mark:
+  - js minification :white_check_mark:
 - chunk spliting :white_check_mark: ( Two possible ways )
 - Html optimization :white_check_mark:
 - Css optmization :white_check_mark:
   - Extract css per chunk into its own file
   - Minify it
 - Tree shaking ( dead code elemination )
+- More human readable webpack dev server
 - Gzipped, [Furthur read](https://stackoverflow.com/questions/50442039/compression-webpack-plugin) :white_check_mark:
+- Better error representation ( Like create-react-app, [Plugin](https://www.npmjs.com/package/error-overlay-webpack-plugin))
 
 ### Loaders used for webpack to work
 

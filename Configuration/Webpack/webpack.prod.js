@@ -23,7 +23,14 @@ const prodConfig = {
   },
   optimization: {
     minimize: true,
-    usedExports: true,
+    mergeDuplicateChunks: true,
+    removeEmptyChunks: true,
+    runtimeChunk: {
+      name: (entrypoint) => `runtimechunk~${entrypoint.name}`,
+    },
+    sideEffects: true, // essential for tree shaking
+    providedExports: true, // essential for tree shaking
+    usedExports: true, // essential for tree shaking
     minimizer: [
       new TerserPlugin({
         // Use multi-process parallel running to improve the build speed
