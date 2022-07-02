@@ -23,7 +23,7 @@ Commands:
 2. npm run build ( builds production build and run postbuild command )
 3. npm run checkPackageUpdate ( runs npm-check -u for all possible updates in package.json )
 
-Production build includes the following optimization
+Production build includes the following optimization :-
 
 - cache busting :white_check_mark:
 - code obfuscation [Plugin](https://www.npmjs.com/package/webpack-obfuscator) :white_check_mark:
@@ -34,8 +34,11 @@ Production build includes the following optimization
   - Extract css per chunk into its own file
   - Minify it
 - Tree shaking ( dead code elemination )
-- More human readable webpack dev server :white_check_mark:
 - Gzipped, [Furthur read](https://stackoverflow.com/questions/50442039/compression-webpack-plugin) :white_check_mark:
+
+Development build includes the following :-
+
+- More human readable webpack dev server :white_check_mark:
 - Better error representation ( Like create-react-app, [Plugin](https://www.npmjs.com/package/error-overlay-webpack-plugin))
 
 ### Loaders used for webpack to work
