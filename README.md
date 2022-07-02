@@ -34,7 +34,7 @@ Production build includes the following optimization
   - Extract css per chunk into its own file
   - Minify it
 - Tree shaking ( dead code elemination )
-- More human readable webpack dev server
+- More human readable webpack dev server :white_check_mark:
 - Gzipped, [Furthur read](https://stackoverflow.com/questions/50442039/compression-webpack-plugin) :white_check_mark:
 - Better error representation ( Like create-react-app, [Plugin](https://www.npmjs.com/package/error-overlay-webpack-plugin))
 
