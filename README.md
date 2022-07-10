@@ -14,6 +14,7 @@
 - ErrorBoundary component for tracking all the errors and sending to backend for
   maintaining a logger file (./src/ErrorLogger/ErrorLogger.tsx)
 - Environment variable setup with best practice.
+- Network layer is handled by react-query
 
 Commands:
 
@@ -62,7 +63,7 @@ Used to compile Ts
 
 **sass-loader**
 
-**style-loader**
+**style-loader**``
 
 **url-loader** & **svg-url-loader** :
 both convert jpg|png and svg into base64 respectively
