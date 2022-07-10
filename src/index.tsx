@@ -6,6 +6,7 @@ import App from "./App";
 import ErrorBoundary from "./ErrorLogger/ErrorLogger";
 
 import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 // react-query client
 const queryClient = new QueryClient();
@@ -20,5 +21,6 @@ root.render(
         <App />
       </ErrorBoundary>
     </Provider>
+    <ReactQueryDevtools />
   </QueryClientProvider>
 );

@@ -101,13 +101,13 @@ const prodConfig = {
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
     }),
-    new CompressionPlugin({
-      filename: "[name]-[fragment].gz",
-      algorithm: "gzip",
-      test: /\.(js|css|html|svg)$/,
-      // threshold: 10240,
-      minRatio: 0.8,
-    }),
+    // new CompressionPlugin({
+    //   filename: "[name]-[fragment].gz",
+    //   algorithm: "gzip",
+    //   test: /\.(js|css|html|svg)$/,
+    //   // threshold: 10240,
+    //   minRatio: 0.8,
+    // }),
     new WebpackObfuscator(
       {
         rotateStringArray: true,
