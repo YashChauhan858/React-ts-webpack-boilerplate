@@ -89,3 +89,4 @@ Store > store.ts (file)
 Store > DispatchHooks.ts (file)
 
 npm uninstall npm-check
+npm i react-query

@@ -3,17 +3,22 @@ import { store } from "./Store/store";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-
 import ErrorBoundary from "./ErrorLogger/ErrorLogger";
+
+import { QueryClient, QueryClientProvider } from "react-query";
+
+// react-query client
+const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-
 root.render(
-  <Provider store={store}>
-    <ErrorBoundary>
-      <App />
-    </ErrorBoundary>
-  </Provider>
+  <QueryClientProvider client={queryClient}>
+    <Provider store={store}>
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
+    </Provider>
+  </QueryClientProvider>
 );
