@@ -7,8 +7,7 @@
   "scripts": {
     "start": "webpack-dashboard -- webpack serve --config configuration/webpack/webpack.dev.js",
     "build": "webpack --config configuration/webpack/webpack.prod.js",
-    "postbuild": "serve dist -p 8080",
-    "checkPackageUpdate": "npm-check -u"
+    "postbuild": "serve dist -p 8080"
   },
   "author": "yash chauhan",
   "license": "ISC",
