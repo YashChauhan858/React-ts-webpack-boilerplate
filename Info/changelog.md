@@ -87,3 +87,5 @@ Store > Features > counter (folder)
 Store > Features > counter > counterSlice.ts (file)
 Store > store.ts (file)
 Store > DispatchHooks.ts (file)
+
+npm uninstall npm-check
