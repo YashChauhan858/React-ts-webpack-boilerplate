@@ -1,15 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 import "./aoo.css";
 
-import { environment, testingVariable } from "./Environment";
+import { Dispatch, Selector } from "./Store/DispatchHooks";
+import {
+  incremented,
+  amountAdded,
+} from "./Store/Features/counter/counterSlice";
 
 const App = () => {
-  const [x, setX] = useState<number>(0);
-  console.log({ environment, testingVariable });
+  const count = Selector((state) => state.counter.value);
+  const dispatch = Dispatch();
+  const increase = () => {
+    // increment by one
+    dispatch(incremented());
+  };
+  const increaseByFixedAmount = () => {
+    dispatch(amountAdded(3));
+  };
   return (
-    <div>
-      App {x}
-      <button onClick={() => setX((state) => state + 1)}>add</button>
+    <div className="ad">
+      {count}
+      <button onClick={increase}>Add count by one</button>
+      <button onClick={increaseByFixedAmount}>Add count by fixed amount</button>
     </div>
   );
 };

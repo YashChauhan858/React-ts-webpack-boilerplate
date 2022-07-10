@@ -13,11 +13,21 @@ module.exports = {
   ],
   module: {
     rules: [
+      // TS NODE
       {
         test: /\.(ts?|tsx?)$/,
         exclude: /node_modules/,
-        use: ["babel-loader", "ts-loader"],
+        use: ["ts-loader"],
       },
+      // ES BUILD
+      // {
+      //   test: /\.(ts?|tsx?)$/,
+      //   loader: "esbuild-loader",
+      //   options: {
+      //     loader: "tsx",
+      //     target: "esnext",
+      //   },
+      // },
       {
         test: /.(jpg|png)$/,
         use: {

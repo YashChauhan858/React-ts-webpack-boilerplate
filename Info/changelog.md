@@ -1,5 +1,3 @@
------------- 24 jun 2022 -----------
-
 npm init
 README.md
 gitpush.sh (file)
@@ -64,3 +62,28 @@ npm i -D compression-webpack-plugin
 npm i -D webpack-obfuscator
 npm install error-overlay-webpack-plugin --save-dev
 npm install --save-dev webpack-dashboard
+npm i -D esbuild-loader
+npm i -D gnomon
+npm uninstall gnomon
+
+<!-- removed babel (MAJOR) -->
+<!-- removed because there is no build time type checking, which is provided by ts-loader -->
+
+"@babel/core": "^7.18.5",
+"@babel/plugin-transform-runtime": "^7.18.5",
+"@babel/preset-env": "^7.18.2",
+"@babel/preset-react": "^7.17.12",
+"@babel/preset-typescript": "^7.17.12",
+"babel-loader": "^8.2.5",
+
+.babelrc (removed)
+
+npm i react-redux @reduxjs/toolkit
+npm install -D @types/react-redux
+
+Store (folder)
+Store > Features (folder)
+Store > Features > counter (folder)
+Store > Features > counter > counterSlice.ts (file)
+Store > store.ts (file)
+Store > DispatchHooks.ts (file)

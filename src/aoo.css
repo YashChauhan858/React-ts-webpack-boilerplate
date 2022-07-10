@@ -1,15 +1,6 @@
-/* body {
-  height: 100%;
-} */
 .ad {
   background: #ce5937;
   background: -moz-linear-gradient(left, #ce5937 0%, #1c6ea4 50%, #c59237 100%);
-  background: -webkit-linear-gradient(
-    left,
-    #ce5937 0%,
-    #1c6ea4 50%,
-    #c59237 100%
-  );
   background: linear-gradient(to right, #ce5937 0%, #1c6ea4 50%, #c59237 100%);
 }
 #demo {

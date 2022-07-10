@@ -1,4 +1,3 @@
-const webpack = require("webpack");
 const { merge } = require("webpack-merge");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -75,7 +74,7 @@ const prodConfig = {
      *          that is split every npm package
      */
     splitChunks: {
-      chunks: "all",
+      chunks: "all", // async for modulefedaration else all
       maxInitialRequests: Infinity,
       minSize: 0,
       cacheGroups: {
@@ -123,6 +122,17 @@ const prodConfig = {
         test: /\.(css|scss)$/,
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        // use: [
+        //   "css-loader",
+        //   // "sass-loader",
+        //   {
+        //     loader: "esbuild-loader",
+        //     options: {
+        //       loader: "css",
+        //       minify: true,
+        //     },
+        //   },
+        // ],
       },
     ],
   },
