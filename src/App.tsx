@@ -1,8 +1,11 @@
 import React from "react";
 import "./aoo.css";
 
-import { Dispatch, Selector } from "./Store";
-import { incremented, amountAdded } from "./Store";
+import { Dispatch, Selector } from "./Store/DispatchHooks";
+import {
+  incremented,
+  amountAdded,
+} from "./Store/Features/counter/counterSlice";
 
 const App = () => {
   const count = Selector((state) => state.counter.value);
