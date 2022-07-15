@@ -90,3 +90,9 @@ Store > DispatchHooks.ts (file)
 
 npm uninstall npm-check
 npm i react-query
+npm install eslint --save-dev
+npm init @eslint/config
+
+npm install --save-dev brotli-gzip-webpack-plugin
+npm install --save-dev brotli-webpack-plugin
+npm uninstall brotli-gzip-webpack-plugin

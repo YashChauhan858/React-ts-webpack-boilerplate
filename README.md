@@ -34,6 +34,7 @@ Production build includes the following optimization :-
   - Minify it
 - Tree shaking ( dead code elemination )
 - Gzipped, [Furthur read](https://stackoverflow.com/questions/50442039/compression-webpack-plugin) :white_check_mark:
+- Brotlie Compression :white_check_mark:
 
 Development build includes the following :-
 

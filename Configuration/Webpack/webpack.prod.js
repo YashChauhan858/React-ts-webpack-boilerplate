@@ -6,6 +6,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 var WebpackObfuscator = require("webpack-obfuscator");
+var BrotliPlugin = require("brotli-webpack-plugin");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const commonConfig = require("./webpack.common");
@@ -100,6 +101,12 @@ const prodConfig = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
+    }),
+    new BrotliPlugin({
+      asset: "[path].br[query]",
+      test: /\.(js|css|html|svg)$/,
+      threshold: 10240,
+      minRatio: 0.8,
     }),
     // new CompressionPlugin({
     //   filename: "[name]-[fragment].gz",
