@@ -58,9 +58,8 @@ const prodConfig = {
     ],
 
     // case 2 : split all the code from node_modules
-
     // splitChunks: {
-    //   minSize: 20000,
+    //   minSize: 0,
     //   cacheGroups: {
     //     chunks: "all",
     //     vendor: {
@@ -105,14 +104,14 @@ const prodConfig = {
     new BrotliPlugin({
       asset: "[path].br[query]",
       test: /\.(js|css|html|svg)$/,
-      threshold: 10240,
+      threshold: 0,
       minRatio: 0.8,
     }),
     // new CompressionPlugin({
     //   filename: "[name]-[fragment].gz",
     //   algorithm: "gzip",
     //   test: /\.(js|css|html|svg)$/,
-    //   // threshold: 10240,
+    //   threshold: 0,
     //   minRatio: 0.8,
     // }),
     new WebpackObfuscator(

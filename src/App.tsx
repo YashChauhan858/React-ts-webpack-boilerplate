@@ -8,7 +8,6 @@ const App = () => {
   const count = Selector((state) => state.counter.value);
   const dispatch = Dispatch();
   const increase = () => {
-    // increment by one
     dispatch(incremented());
   };
   const increaseByFixedAmount = () => {
