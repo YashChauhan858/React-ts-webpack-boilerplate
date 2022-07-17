@@ -1,3 +1,3 @@
 git add .
-git commit -m "jul 17, improved tsconfing type checking enabled, PATH alias, package update"
+git commit -m "jul 17, changed changes.md"
 git push -u origin main
