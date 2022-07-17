@@ -7,8 +7,7 @@
   "scripts": {
     "start": "webpack-dashboard -- webpack serve --config configuration/webpack/webpack.dev.js",
     "build": "webpack --config configuration/webpack/webpack.prod.js",
-    "postbuild": "serve dist -p 8080",
-    "outdatedPackages": "npm outdated"
+    "postbuild": "serve dist -p 8080"
   },
   "author": "yash chauhan",
   "license": "ISC",
@@ -25,7 +24,7 @@
     "css-minimizer-webpack-plugin": "^4.0.0",
     "dotenv-webpack": "^8.0.0",
     "error-overlay-webpack-plugin": "^1.1.0",
-    "eslint": "^8.19.0",
+    "eslint": "^8.20.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.0",
@@ -38,6 +37,7 @@
     "style-loader": "^3.3.1",
     "svg-url-loader": "^7.1.1",
     "ts-loader": "^9.3.1",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
     "typescript": "^4.7.4",
     "url-loader": "^4.1.1",
     "webpack": "^5.73.0",
@@ -52,7 +52,7 @@
     "@reduxjs/toolkit": "^1.8.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-query": "^3.39.1",
+    "react-query": "^3.39.2",
     "react-redux": "^8.0.2",
     "serve": "^14.0.1"
   }

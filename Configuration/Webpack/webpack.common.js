@@ -1,9 +1,11 @@
 const Dotenv = require("dotenv-webpack");
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx",
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".jsx"],
+    plugins: [new TsconfigPathsPlugin()],
   },
   plugins: [
     new Dotenv({
@@ -13,21 +15,11 @@ module.exports = {
   ],
   module: {
     rules: [
-      // TS NODE
       {
         test: /\.(ts?|tsx?)$/,
         exclude: /node_modules/,
         use: ["ts-loader"],
       },
-      // ES BUILD
-      // {
-      //   test: /\.(ts?|tsx?)$/,
-      //   loader: "esbuild-loader",
-      //   options: {
-      //     loader: "tsx",
-      //     target: "esnext",
-      //   },
-      // },
       {
         test: /.(jpg|png)$/,
         use: {

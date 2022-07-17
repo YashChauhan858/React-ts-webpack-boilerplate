@@ -96,3 +96,7 @@ npm init @eslint/config
 npm install --save-dev brotli-gzip-webpack-plugin
 npm install --save-dev brotli-webpack-plugin
 npm uninstall brotli-gzip-webpack-plugin
+
+<!-- for alias path name -->
+
+npm i -D tsconfig-paths-webpack-plugin
