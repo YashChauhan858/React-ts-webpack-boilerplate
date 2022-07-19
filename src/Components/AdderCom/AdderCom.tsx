@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { Dispatch, Selector } from "@Store";
-import { incremented, amountAdded } from "@Store";
+import { Dispatch, Selector, incremented, amountAdded } from '@Store';
 
 const AdderCom = () => {
-  const count = Selector((state) => state.counter.value);
+  const count = Selector((state: any) => state.counter.value);
+
   const dispatch = Dispatch();
   const increase = () => {
     dispatch(incremented());

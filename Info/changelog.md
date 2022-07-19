@@ -98,3 +98,7 @@
 <!-- for alias path name -->
 
 - npm i -D tsconfig-paths-webpack-plugin
+- npm install eslint-plugin-react-hooks --save-dev
+- npm i -D prettier
+- .prettierrc
+- .eslintignore

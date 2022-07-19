@@ -1,6 +1,6 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
 
-import counterSliceReducer from "./Features/counter/counterSlice";
+import counterSliceReducer from './Features/counter/counterSlice';
 
 /**
  * @configureStore is a wrapper around redux createStore function and automatically sets up a
