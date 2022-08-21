@@ -1,25 +1,25 @@
-const { merge } = require("webpack-merge");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CompressionPlugin = require("compression-webpack-plugin");
-var WebpackObfuscator = require("webpack-obfuscator");
-var BrotliPlugin = require("brotli-webpack-plugin");
-const BundleAnalyzerPlugin =
-  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
-const commonConfig = require("./webpack.common");
-const path = require("path");
+const { merge } = require('webpack-merge');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const CompressionPlugin = require('compression-webpack-plugin');
+const WebpackObfuscator = require('webpack-obfuscator');
+const BrotliPlugin = require('brotli-webpack-plugin');
+// const BundleAnalyzerPlugin =
+//   require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const path = require('path');
+const commonConfig = require('./webpack.common');
 
 const prodConfig = {
-  mode: "production",
+  mode: 'production',
   output: {
-    filename: "[name].[contenthash].js",
-    publicPath: `/`,
+    filename: '[name].[contenthash].js',
+    publicPath: '/',
     clean: true,
     compareBeforeEmit: true,
-    path: path.resolve(__dirname, "../../dist"),
+    path: path.resolve(__dirname, '../../dist'),
   },
   optimization: {
     minimize: true,
@@ -44,7 +44,7 @@ const prodConfig = {
       }),
       new CssMinimizerPlugin(),
       new HtmlWebpackPlugin({
-        template: "./public/index.html",
+        template: './public/index.html',
         minify: {
           collapseWhitespace: true,
           keepClosingSlash: true,
@@ -74,7 +74,7 @@ const prodConfig = {
      *          that is split every npm package
      */
     splitChunks: {
-      chunks: "all", // async for modulefedaration else all
+      chunks: 'all', // async for modulefedaration else all
       maxInitialRequests: Infinity,
       minSize: 0,
       cacheGroups: {
@@ -87,10 +87,10 @@ const prodConfig = {
               /[\\/]node_modules[\\/](.*?)([\\/]|$)/
             )[1];
             // npm package names are URL-safe, but some servers don't like @ symbols
-            if (packageName.includes("react-dom")) {
-              return "vendom.react-dom";
+            if (packageName.includes('react-dom')) {
+              return 'vendom.react-dom';
             }
-            return `vendor.${packageName.replace("@", "")}`;
+            return `vendor.${packageName.replace('@', '')}`;
           },
         },
       },
@@ -99,10 +99,10 @@ const prodConfig = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
+      filename: '[name].[contenthash].css',
     }),
     new BrotliPlugin({
-      asset: "[path].br[query]",
+      asset: '[path].br[query]',
       test: /\.(js|css|html|svg)$/,
       threshold: 0,
       minRatio: 0.8,
@@ -118,7 +118,7 @@ const prodConfig = {
       {
         rotateStringArray: true,
       },
-      ["vendom.react-dom.**.js"]
+      ['vendom.react-dom.**.js']
     ),
     // new BundleAnalyzerPlugin(),
   ],
@@ -127,7 +127,7 @@ const prodConfig = {
       {
         test: /\.(css|scss)$/,
         exclude: /node_modules/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
         // use: [
         //   "css-loader",
         //   // "sass-loader",

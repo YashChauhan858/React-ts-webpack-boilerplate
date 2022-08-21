@@ -24,6 +24,7 @@ module.exports = {
     'import/no-unresolved': 'off',
     'react/button-has-type': 'off',
     'object-curly-newline': 'off',
+    'import/no-extraneous-dependencies': 'off',
     'react/jsx-filename-extension': [
       1,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },

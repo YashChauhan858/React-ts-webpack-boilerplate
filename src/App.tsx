@@ -1,7 +1,6 @@
 import React from 'react';
 import './aoo.css';
-import { AdderCom } from '@Components';
 
-const App = () => <AdderCom />;
+const App = () => <h1>This is react app</h1>;
 
 export default App;

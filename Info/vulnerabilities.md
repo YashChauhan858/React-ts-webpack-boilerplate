@@ -9,3 +9,6 @@ Date : 10, july 2022
 
 Date : 19, july 2022
 14 moderate vulnerabilities
+
+Date : 21, Aug 2022
+0 moderate vulnerabilities
