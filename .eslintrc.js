@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
+    'operator-linebreak': 'off',
     'react/react-in-jsx-scope': 'off',
     'linebreak-style': 'off',
     'import/extensions': 'off',
