@@ -1,0 +1,9 @@
+@import './variables/variables';
+
+.h1Class {
+  font-size: 20rem;
+  color: $h1Color;
+}
+
+@import './components/components';
+@import './pages/pages';
