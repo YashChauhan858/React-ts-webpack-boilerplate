@@ -102,3 +102,7 @@
 - npm i -D prettier
 - .prettierrc
 - .eslintignore
+
+<!-- upgraded packages -->
+
+- npm-check -u
