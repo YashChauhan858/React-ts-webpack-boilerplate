@@ -114,3 +114,10 @@
 - Styles > pages (folder) > \_pages.scss (file)
 - Styles > variables > \_variables.scss (file)
 - Styles > \_global.scss (file)
+
+<!-- react query package updates -->
+
+- npm uninstall react-query
+- npm i @tanstack/react-query
+- npm i -D @tanstack/eslint-plugin-query
+- npm i @tanstack/react-query-devtools
