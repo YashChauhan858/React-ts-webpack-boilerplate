@@ -13,6 +13,7 @@
   "author": "yash chauhan",
   "license": "ISC",
   "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^4.29.8",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "@types/react-redux": "^7.1.25",
@@ -52,9 +53,10 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
+    "@tanstack/react-query": "^4.29.7",
+    "@tanstack/react-query-devtools": "^4.29.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-query": "^3.39.3",
     "react-redux": "^8.0.5",
     "serve": "^14.2.0"
   }
