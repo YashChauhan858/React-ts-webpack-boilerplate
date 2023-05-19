@@ -106,3 +106,11 @@
 <!-- upgraded packages -->
 
 - npm-check -u
+
+<!-- styles folder added -->
+
+- Styles (folder)
+- Styles > component (folder) > \_components.scss (file)
+- Styles > pages (folder) > \_pages.scss (file)
+- Styles > variables > \_variables.scss (file)
+- Styles > \_global.scss (file)
