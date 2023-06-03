@@ -15,6 +15,7 @@
   maintaining a logger file (./src/ErrorLogger/ErrorLogger.tsx)
 - Environment variable setup with best practice.
 - Network layer is handled by react-query.
+- There is no need to import React in files that uses JSX.
 
 Commands:
 
