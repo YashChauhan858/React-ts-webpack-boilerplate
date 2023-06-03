@@ -14,6 +14,7 @@ const commonConfig = require('./webpack.common');
 
 const prodConfig = {
   mode: 'production',
+  devtool: 'hidden-nosources-source-map',
   output: {
     filename: '[name].[contenthash].js',
     publicPath: '/',
