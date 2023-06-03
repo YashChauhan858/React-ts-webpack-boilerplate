@@ -125,3 +125,4 @@
 - npm i -D dotenv
 - npm uninstall dotenv
 - npm uninstall svg-url-loader url-loader
+- npm-check -u (all packages updated)
