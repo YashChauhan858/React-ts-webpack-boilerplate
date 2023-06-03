@@ -26,6 +26,8 @@
       "@Environment/*": ["./Environment/*"],
       "@Store": ["./Store"],
       "@Store/*": ["./Store/*"],
+      "@Assets": ["./Assets"],
+      "@Assets/*": ["./Assets/*"],
       "@Styles": ["./Styles"],
       "@Styles/*": ["./Styles/*"]
     },
