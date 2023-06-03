@@ -1,7 +1,7 @@
 const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
-const DashboardPlugin = require('webpack-dashboard/plugin');
+// const DashboardPlugin = require('webpack-dashboard/plugin');
 const commonConfig = require('./webpack.common');
 
 const devConfig = {
@@ -23,7 +23,7 @@ const devConfig = {
       template: './public/index.html',
     }),
     new ErrorOverlayPlugin(),
-    new DashboardPlugin(),
+    // new DashboardPlugin(),
   ],
 };
 
