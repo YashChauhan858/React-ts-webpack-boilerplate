@@ -123,3 +123,4 @@
 - npm i @tanstack/react-query-devtools
 
 - npm i -D dotenv
+- npm uninstall dotenv
