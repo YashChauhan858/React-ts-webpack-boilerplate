@@ -9,11 +9,10 @@ const devConfig = {
   output: {
     publicPath: 'http://localhost:3000/',
   },
-  // devtool: 'cheap-module-source-map',
   devtool: 'source-map',
   devServer: {
     port: 3000,
-    host: 'localhost',
+    host: '0.0.0.0', // 0.0.0.0 let anyone to make request to our dev server
     historyApiFallback: {
       index: '/',
     },
