@@ -21,18 +21,8 @@ module.exports = {
         use: ['ts-loader'],
       },
       {
-        test: /.(jpg|png)$/,
-        use: {
-          loader: 'url-loader',
-        },
-      },
-      {
-        test: /.svg$/,
-        use: [
-          {
-            loader: 'svg-url-loader',
-          },
-        ],
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
       {
         test: /\.(css|scss)$/,
