@@ -121,3 +121,5 @@
 - npm i @tanstack/react-query
 - npm i -D @tanstack/eslint-plugin-query
 - npm i @tanstack/react-query-devtools
+
+- npm i -D dotenv
