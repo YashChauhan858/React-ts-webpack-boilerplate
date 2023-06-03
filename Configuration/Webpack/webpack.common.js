@@ -1,5 +1,6 @@
 const Dotenv = require('dotenv-webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.tsx',
@@ -11,6 +12,9 @@ module.exports = {
     new Dotenv({
       path: './env/.env',
       systemvars: true,
+    }),
+    new webpack.ProvidePlugin({
+      React: 'react',
     }),
   ],
   module: {
