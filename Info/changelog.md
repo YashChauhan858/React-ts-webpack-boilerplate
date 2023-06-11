@@ -126,3 +126,5 @@
 - npm uninstall dotenv
 - npm uninstall svg-url-loader url-loader
 - npm-check -u (all packages updated)
+
+- added dockerfile, dockerignore and nginx.conf file
