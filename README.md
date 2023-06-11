@@ -7,7 +7,7 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/ESLint_logo.svg" alt="docker" width="100"/>
   <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="docker" width="110"/>
   <img src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png" alt="Redux" width="100"/>
-  <img src="https://www.nginx.com/wp-content/uploads/2021/08/NGINX-product-icon.svg" alt="Redux" width="100"/>
+  <img src="https://www.nginx.com/wp-content/uploads/2021/08/NGINX-product-icon.svg" alt="Nginx" width="100"/>
 </p>
 
 - This is a boilerplate that includes react setup with webpack from scratch and integration of
