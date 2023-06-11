@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack serve --config ./Configuration/Webpack/webpack.dev.js",
     "build": "webpack --config ./Configuration/Webpack/webpack.prod.js",
-    "postbuild": "serve dist -p 8080",
+    "runbuild": "serve dist -p 8080",
     "lint": "eslint src/**/*.tsx"
   },
   "author": "yash chauhan",
