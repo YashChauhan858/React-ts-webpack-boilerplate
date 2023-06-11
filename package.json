@@ -6,7 +6,6 @@
   "sideEffects": false,
   "scripts": {
     "start": "webpack serve --config ./Configuration/Webpack/webpack.dev.js",
-    "prestart": "pwd",
     "build": "webpack --config ./Configuration/Webpack/webpack.prod.js",
     "postbuild": "serve dist -p 8080",
     "lint": "eslint src/**/*.tsx"
