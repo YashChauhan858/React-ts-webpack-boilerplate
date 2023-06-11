@@ -5,8 +5,9 @@
   "main": "index.tsx",
   "sideEffects": false,
   "scripts": {
-    "start": "webpack serve --config Configuration/webpack/webpack.dev.js",
-    "build": "webpack --config Configuration/webpack/webpack.prod.js",
+    "start": "webpack serve --config ./Configuration/Webpack/webpack.dev.js",
+    "prestart": "pwd",
+    "build": "webpack --config ./Configuration/Webpack/webpack.prod.js",
     "postbuild": "serve dist -p 8080",
     "lint": "eslint src/**/*.tsx"
   },
